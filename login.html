@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Login to access the Image Hospital patient portal and authorized hospital systems."
+    />
+    <title>Login | Image Hospital</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="login-body">
+    <header class="site-header compact-header">
+      <div class="container nav-wrapper">
+        <a class="brand" href="index.html" aria-label="Image Hospital home page">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false" aria-hidden="true">
+              <rect x="8" y="8" width="48" height="48" rx="12"></rect>
+              <path d="M32 18v28M18 32h28" />
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <strong>Image Hospital</strong>
+            <small>Healthcare Excellence</small>
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <main class="login-page">
+      <section class="login-shell" aria-labelledby="login-heading">
+        <div class="login-panel">
+          <div class="login-copy">
+            <span class="eyebrow">Authorized access</span>
+            <h1 id="login-heading">Welcome back</h1>
+            <p>Log in to manage appointments, view care plans, and access patient records securely.</p>
+          </div>
+
+          <form class="login-form" action="index.html" method="get">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="name@hospital.org" required />
+
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Enter your password" required />
+
+            <div class="form-row">
+              <label class="checkbox-row" for="remember-me">
+                <input id="remember-me" name="remember-me" type="checkbox" />
+                <span>Remember me</span>
+              </label>
+              <a href="#">Forgot password?</a>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">Login</button>
+            <p class="form-note">Need access? Contact the hospital IT help desk for assistance.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
